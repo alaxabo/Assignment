@@ -14,10 +14,6 @@ class TrackDetailViewController: UIViewController {
     @IBOutlet weak var artist: UILabel!
     
     var searchDetailResult: Track?
-    var artistName: String?
-    var trackName: String?
-    var imageData: Data?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
