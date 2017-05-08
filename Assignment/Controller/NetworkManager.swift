@@ -64,7 +64,8 @@ class NetworkManager{
             else{
                 print("JSON error")
             }
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: didUpdateSearchResult), object: searchResults)
+//            NotificationCenter.default.post(name: NSNotification.Name(rawValue: didUpdateSearchResult), object: searchResults)
+            delegate?.didUpdateSearchResult(searchResult: searchResults)
         }catch let error as NSError {
             print("Error parsing results: \(error.localizedDescription)")
         }

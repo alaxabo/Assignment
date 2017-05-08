@@ -36,11 +36,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        searchBar.backgroundColor = UIColor.green
+        searchBar.placeholder = "Search"
         if self.revealViewController() != nil{
             tabButton.target = self.revealViewController()
             tabButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            //self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            self.revealViewController().rearViewRevealWidth = 130
         }
         
         if selectedMedia == nil {
@@ -61,8 +63,10 @@ class ViewController: UIViewController {
         }
         NotificationCenter.default.addObserver(self, selector: #selector(getSelectFromLeftTab(_:)), name: NSNotification.Name(rawValue: didChooseLeftTab), object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(getUpdateSearchResult(_:)), name: NSNotification.Name(rawValue: didUpdateSearchResult), object: nil)
-
+//        NotificationCenter.default.addObserver(self, selector: #selector(getUpdateSearchResult(_:)), name: NSNotification.Name(rawValue: didUpdateSearchResult), object: nil)
+        
+        NetworkManager.shared.delegate = self
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -71,14 +75,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getUpdateSearchResult(_ notification: Notification){
-        let result = notification.object as? [Track]
-        self.searchResults = result!
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-            self.tableView.setContentOffset(CGPoint.zero, animated: false)
-        }
-    }
+//    func getUpdateSearchResult(_ notification: Notification){
+//        let result = notification.object as? [Track]
+//        self.searchResults = result!
+//        DispatchQueue.main.async {
+//            self.tableView.reloadData()
+//            self.tableView.setContentOffset(CGPoint.zero, animated: false)
+//        }
+//    }
     
     func getSelectFromLeftTab(_ notification: Notification){
         let result = notification.object as? String
@@ -127,6 +131,17 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: NetworkManagerDelegate{
+    func didUpdateSearchResult(searchResult: [Track]) {
+        self.searchResults = searchResult
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+            self.tableView.setContentOffset(CGPoint.zero, animated: false)
+        }
+    }
+}
+
+
 
 extension ViewController: UITableViewDataSource{
     
@@ -170,6 +185,9 @@ extension ViewController: UISearchBarDelegate{
             NetworkManager.shared.updateSearchResultFromUrl(url!)
         }
     }
+//    func position(for bar: UIBarPositioning) -> UIBarPosition {
+//        return .topAttached
+//    }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         view.addGestureRecognizer(tapRecognizer)
