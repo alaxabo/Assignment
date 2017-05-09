@@ -260,13 +260,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ecy-Ek-ipR">
                                 <rect key="frame" x="16" y="215" width="343" height="96"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hF8-JJ-ao8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hF8-JJ-ao8">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr5-3T-Qxc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr5-3T-Qxc">
                                         <rect key="frame" x="0.0" y="66" width="343" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
@@ -276,6 +276,10 @@
                             </stackView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peA-G6-xcH">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="H4m-Ge-1n8"/>
+                                    <constraint firstAttribute="width" constant="375" id="UU8-KR-lfi"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem style="plain" id="1aq-tS-Rng">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sfM-C9-EmQ">
@@ -311,7 +315,6 @@
                             <constraint firstItem="ecy-Ek-ipR" firstAttribute="centerX" secondItem="PDV-yn-CJh" secondAttribute="centerX" id="Ugh-rJ-8ND"/>
                             <constraint firstItem="peA-G6-xcH" firstAttribute="leading" secondItem="PDV-yn-CJh" secondAttribute="leading" id="am0-WY-sD3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ecy-Ek-ipR" secondAttribute="trailing" id="f7H-3b-1Gz"/>
-                            <constraint firstItem="peA-G6-xcH" firstAttribute="top" secondItem="ecy-Ek-ipR" secondAttribute="bottom" constant="312" id="kpU-VQ-ewH"/>
                             <constraint firstItem="ecy-Ek-ipR" firstAttribute="leading" secondItem="PDV-yn-CJh" secondAttribute="leadingMargin" id="zKW-ah-j2E"/>
                             <constraint firstItem="3sk-BG-A8L" firstAttribute="top" secondItem="wqn-d5-3ow" secondAttribute="bottom" constant="10" id="zdD-Qo-7rq"/>
                         </constraints>

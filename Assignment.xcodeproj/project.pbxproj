@@ -20,7 +20,6 @@
 		6B86FFA51EC051C90068F4CF /* LeftTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B86FFA41EC051C90068F4CF /* LeftTabViewController.swift */; };
 		6B86FFAA1EC052870068F4CF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B86FFA91EC052870068F4CF /* SWRevealViewController.m */; };
 		6B86FFAD1EC065DF0068F4CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B86FFAC1EC065DF0068F4CF /* AppDelegate.swift */; };
-		6B86FFB91EC067020068F4CF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B86FFB81EC067020068F4CF /* Default-568h@2x.png */; };
 		6B86FFBB1EC0672E0068F4CF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B86FFBA1EC0672E0068F4CF /* Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,6 @@
 		6B86FFA81EC052870068F4CF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		6B86FFA91EC052870068F4CF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		6B86FFAC1EC065DF0068F4CF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
-		6B86FFB81EC067020068F4CF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6B86FFBA1EC0672E0068F4CF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +57,6 @@
 		6B005C0B1E9C8AD800936CFD = {
 			isa = PBXGroup;
 			children = (
-				6B86FFB81EC067020068F4CF /* Default-568h@2x.png */,
 				6B005C161E9C8AD800936CFD /* Assignment */,
 				6B005C151E9C8AD800936CFD /* Products */,
 			);
@@ -214,7 +211,6 @@
 			files = (
 				6B005C221E9C8AD800936CFD /* LaunchScreen.storyboard in Resources */,
 				6B005C1F1E9C8AD800936CFD /* Assets.xcassets in Resources */,
-				6B86FFB91EC067020068F4CF /* Default-568h@2x.png in Resources */,
 				6B86FFBB1EC0672E0068F4CF /* Info.plist in Resources */,
 				6B005C1D1E9C8AD800936CFD /* Main.storyboard in Resources */,
 			);
