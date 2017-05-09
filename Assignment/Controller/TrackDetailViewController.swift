@@ -32,6 +32,27 @@ class TrackDetailViewController: UIViewController {
         dismiss(animated: true, completion: .none)
         ViewController.load()
     }
+    @IBAction func shareAction(_ sender: UIButton) {
+        let firstActivityItem = "Text you want"
+        let secondActivityItem :String = (searchDetailResult?.name)!
+        let thirdActivityItem :String = (searchDetailResult?.trackViewUrl)!
+        // If you want to put an image
+        
+        let activityViewController : UIActivityViewController = UIActivityViewController(
+            activityItems: [firstActivityItem, secondActivityItem,thirdActivityItem], applicationActivities: nil)
+        
+        // This lines is for the popover you need to show in iPad
+        activityViewController.popoverPresentationController?.sourceView = (sender)
+        
+        // This line remove the arrow of the popover to show in iPad
+        activityViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.any
+            //UIPopoverArrowDirection.allZeros
+        activityViewController.popoverPresentationController?.sourceRect = CGRect(x: 150, y: 150, width: 0, height: 0)
+        
+        // Anything you want to exclude
+        activityViewController.excludedActivityTypes = [UIActivityType.airDrop, UIActivityType.addToReadingList]
+        self.present(activityViewController, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

@@ -50,7 +50,8 @@ class NetworkManager{
                             let artist = trackDictionary["artistName"] as? String
                             //print(name)
                             let artwork = trackDictionary["artworkUrl100"] as? String
-                            searchResults.append(Track(name: name, artist: artist, artworkUrl100: artwork))
+                            let trackUrl = trackDictionary["trackViewUrl"] as? String
+                            searchResults.append(Track(name: name, artist: artist, artworkUrl100: artwork, trackViewUrl: trackUrl))
                         }
                         else{
                             print("Not a dictionary")

@@ -10,11 +10,11 @@
 		6B005C1D1E9C8AD800936CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B005C1B1E9C8AD800936CFD /* Main.storyboard */; };
 		6B005C1F1E9C8AD800936CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B005C1E1E9C8AD800936CFD /* Assets.xcassets */; };
 		6B005C221E9C8AD800936CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B005C201E9C8AD800936CFD /* LaunchScreen.storyboard */; };
+		6B009F451EC161B200B6BB4B /* TrackDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B009F441EC161B200B6BB4B /* TrackDetailViewController.swift */; };
 		6B86FF971EC050AB0068F4CF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B86FF961EC050AB0068F4CF /* CollectionViewCell.swift */; };
 		6B86FF991EC050B90068F4CF /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B86FF981EC050B90068F4CF /* TrackCell.swift */; };
 		6B86FF9B1EC050F00068F4CF /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B86FF9A1EC050F00068F4CF /* Track.swift */; };
 		6B86FF9D1EC051300068F4CF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B86FF9C1EC051300068F4CF /* NetworkManager.swift */; };
-		6B86FF9F1EC051360068F4CF /* TrackDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B86FF9E1EC051360068F4CF /* TrackDetailViewController.swift */; };
 		6B86FFA11EC0513C0068F4CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B86FFA01EC0513C0068F4CF /* ViewController.swift */; };
 		6B86FFA31EC051C10068F4CF /* LeftTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B86FFA21EC051C10068F4CF /* LeftTabViewCell.swift */; };
 		6B86FFA51EC051C90068F4CF /* LeftTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B86FFA41EC051C90068F4CF /* LeftTabViewController.swift */; };
@@ -29,11 +29,11 @@
 		6B005C1C1E9C8AD800936CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B005C1E1E9C8AD800936CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B005C211E9C8AD800936CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B009F441EC161B200B6BB4B /* TrackDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackDetailViewController.swift; path = Controller/TrackDetailViewController.swift; sourceTree = "<group>"; };
 		6B86FF961EC050AB0068F4CF /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = View/CollectionViewCell.swift; sourceTree = "<group>"; };
 		6B86FF981EC050B90068F4CF /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackCell.swift; path = View/TrackCell.swift; sourceTree = "<group>"; };
 		6B86FF9A1EC050F00068F4CF /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Track.swift; path = Model/Track.swift; sourceTree = "<group>"; };
 		6B86FF9C1EC051300068F4CF /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Controller/NetworkManager.swift; sourceTree = "<group>"; };
-		6B86FF9E1EC051360068F4CF /* TrackDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackDetailViewController.swift; path = Controller/TrackDetailViewController.swift; sourceTree = "<group>"; };
 		6B86FFA01EC0513C0068F4CF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
 		6B86FFA21EC051C10068F4CF /* LeftTabViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftTabViewCell.swift; path = "Left Tab/LeftTabViewCell.swift"; sourceTree = "<group>"; };
 		6B86FFA41EC051C90068F4CF /* LeftTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftTabViewController.swift; path = "Left Tab/LeftTabViewController.swift"; sourceTree = "<group>"; };
@@ -136,8 +136,8 @@
 		6BC63D021EADEF2F001A4FC8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6B009F441EC161B200B6BB4B /* TrackDetailViewController.swift */,
 				6B86FF9C1EC051300068F4CF /* NetworkManager.swift */,
-				6B86FF9E1EC051360068F4CF /* TrackDetailViewController.swift */,
 				6B86FFA01EC0513C0068F4CF /* ViewController.swift */,
 			);
 			name = Controller;
@@ -228,9 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B86FFAD1EC065DF0068F4CF /* AppDelegate.swift in Sources */,
+				6B009F451EC161B200B6BB4B /* TrackDetailViewController.swift in Sources */,
 				6B86FF9B1EC050F00068F4CF /* Track.swift in Sources */,
 				6B86FF9D1EC051300068F4CF /* NetworkManager.swift in Sources */,
-				6B86FF9F1EC051360068F4CF /* TrackDetailViewController.swift in Sources */,
 				6B86FFA11EC0513C0068F4CF /* ViewController.swift in Sources */,
 				6B86FFA31EC051C10068F4CF /* LeftTabViewCell.swift in Sources */,
 				6B86FF971EC050AB0068F4CF /* CollectionViewCell.swift in Sources */,
