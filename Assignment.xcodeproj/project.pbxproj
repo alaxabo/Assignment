@@ -77,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				6B86FFAB1EC0659C0068F4CF /* Application */,
-				6B86FFA61EC052870068F4CF /* SWRevealViewController */,
 				6BC63D0D1EADF75F001A4FC8 /* Left Tab */,
 				6BC63D021EADEF2F001A4FC8 /* Controller */,
 				6BC63D011EADEF23001A4FC8 /* View */,
@@ -136,6 +135,7 @@
 		6BC63D021EADEF2F001A4FC8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6B86FFA61EC052870068F4CF /* SWRevealViewController */,
 				6B009F441EC161B200B6BB4B /* TrackDetailViewController.swift */,
 				6B86FF9C1EC051300068F4CF /* NetworkManager.swift */,
 				6B86FFA01EC0513C0068F4CF /* ViewController.swift */,
@@ -364,7 +364,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Alaxabo.Assignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "../../Downloads/SWRevealViewController-master/SWRevealViewController/Assignment-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assignment/SWRevealViewController/Assignment-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -379,7 +379,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Alaxabo.Assignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "../../Downloads/SWRevealViewController-master/SWRevealViewController/Assignment-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assignment/SWRevealViewController/Assignment-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
