@@ -42,7 +42,7 @@ class TrackDetailViewController: UIViewController {
             activityItems: [firstActivityItem, secondActivityItem,thirdActivityItem], applicationActivities: nil)
         
         // This lines is for the popover you need to show in iPad
-        activityViewController.popoverPresentationController?.sourceView = (sender)
+        activityViewController.popoverPresentationController?.sourceView = sender
         
         // This line remove the arrow of the popover to show in iPad
         activityViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.any
