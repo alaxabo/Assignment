@@ -50,7 +50,7 @@ class TrackDetailViewController: UIViewController {
         activityViewController.popoverPresentationController?.sourceRect = CGRect(x: 150, y: 150, width: 0, height: 0)
         
         // Anything you want to exclude
-        activityViewController.excludedActivityTypes = [UIActivityType.airDrop, UIActivityType.addToReadingList]
+        activityViewController.excludedActivityTypes = [UIActivityType.airDrop]
         self.present(activityViewController, animated: true, completion: nil)
     }
 
